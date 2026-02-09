@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            position: sticky;
+            
+        }
+        .login-form input[type="text"], .login-form input[type="password"] {
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            color: white;
+            position:fixed;
+        }
+        
+
+    </style>
+</head>
+<body class="dark:bg-slate-900;"style="background-color: black; position: sticky;">
+    <div style="display:inline-block; justify-content:center; align-items:center; width:100%; height:70px;margin-left: 50px;margin-top:20px" >
+
+            <div style="color: white;border:none; cursor:pointer;display: inline-block;margin-right: 30px;position:sticky;">
+                home
+            </div>
+            <div style="color: white;border:none; cursor:pointer;display: inline-block;margin-right: 30px;position: sticky;">
+                features 
+            </div>
+            <div style="color: white;border:none; cursor:pointer; display: inline-block;margin-right: 30px;position: sticky;">
+                about
+            </div>
+            <div style="color:white; border:none; cursor:pointer; display: inline-block;margin-right: 30px;position: sticky;">
+                contact
+            </div>
+            <div style="color:white; border:none; cursor:pointer; display: inline-block;margin-right:50px;margin-left: 80px;border:0.1px solid white;border-radius:15px;padding:7px;position: sticky;">
+                sign in
+            </div>
+        
+    </div>
+    <div style="margin-top:100px; text-align:center;position: sticky;">
+        <h2 style="color: white;align-items: center;header {
+            position: -webkit-sticky; /* For Safari support */
+            position: sticky;
+            top: 0; /* Sticks at the top of the viewport */
+            background-color: white;
+            z-index: 100;
+            }position: sticky;">Create Account</h2>
+        <form  style="background-color:white;display:inline-block; padding:30px;border-radius:10px;">
+            <h2>User Login</h2>
+            <div class="login-form" style="text-align:center;position: sticky;">
+                <input type="text" placeholder="username" style="width:300px;height:40px; border-radius:10px;position: sticky;"><br>
+                <input type="password" placeholder="password" style="width:300px; height:40px; border-radius:10px; border:none; margin-bottom:20px; padding-left:10px;position: sticky;"><br>
+                <div style="display:inline-block; text-align:right; width:300px; margin-bottom:20px;position: sticky;">
+                    <div style="color: black;border:none; cursor:pointer;display: inline-block;margin-right:90px;position: sticky;">Forgot Password? </a>
+                    </div>
+                    <div style="color: black;border:none; cursor:pointer;display: inline-block;margin-left:30px;position: sticky;">Remember </a>
+                    </div>
+                </div>
+
+                <input type="submit" value="Login" style="width:250px; height:40px; border-radius:10px; border:none; background-color:gray; cursor:pointer;position:static;">
+            </div>
+
+            
+        </form>
+    </div>
+    
+</body>
+</html>
