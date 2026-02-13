@@ -14,7 +14,7 @@ body{
 }
 .navbar li{
     list-style-type: none;
-    color: black;
+    /* color: black; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15px; 
     display: inline-block;
@@ -315,19 +315,100 @@ body{
     top:143%;
     left:490px;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap:40px;
     /* height: 40px;
     width: 1px; */
     display: grid;
     grid-auto-flow: column;
     grid-auto-flow: row;
-    grid-template-columns: 230px 230px 230px 230px;
-    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 64px 64px;
+    line-height: 24px;
+    max-width: 1024px;
+    height: 156px;
     text-wrap: balance;
+    padding-bottom: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    row-gap: 28px;
+    text-size-adjust: 100%;
 
 }
-.x-logo{
+/*  */
+.anthropic{
+    width:130px;
+    height: 20px;
+}
+.coinbase{
+    width: 122px;
+    height: 25px;
+}
+.microsoft{
+    width: 120;
+    height: 26px;
+}
+.company img perplexity{
+    width: 135px;
+    height: 35px;
+}
+.hubspot{
+    width: 100px;
+    height: 30px;
+}
+.x{
+    width: 124px;
+    height: 27px;
+    /* display:flex;
+    align-items: center; */
+}
+.paypal{
+    width: 110px;
+    height: 130px;
+}
+.lovable{
+    width:107px;
+    height: 18px;
+}
+.built-heading{
+    font-size: 40px;
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 175%;
+    left:710px;
+}
+.subheading{
+    font-size: 16px;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 182%;
+    left:620px;
+    text-wrap: balance;
+    height: 48px;
+    width: 648px;
+    color:#08090acc;
+    margin-inline: auto;
+    line-height:1.5;
+}
+.blocks{
+    display: grid;
+    display: inline-flex;
+    position: absolute;
+    top:200%;
+    left:490px;
+    align-items: center;
+    justify-content: center;
+
+}
+.block-1{
+    border: solid black;
     
     
 }
-
