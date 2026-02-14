@@ -564,8 +564,8 @@ body{
     width: 60px; 
     border: 5px solid rgb(236, 236, 236);
     padding:12px;
-    /* position: absolute;
-    top:50%;
+    position: absolute;
+    /* top:50%;
     left:50%; */
     /* transform: translate(-50%,-50%); */
 }
@@ -575,20 +575,21 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0px;
-
+    height: 60px;
+    width: 60px; 
 }
 .check-mark-hover{
-    display: none;
+    opacity: 0;
     background-color: #0c8c5e;
     border-radius: 50%;
     height: 60px;
     width: 60px; 
     border: 5px solid rgb(221, 221, 221);
     padding:12px;
-    position: absolute;
-    top:50%;
+    /* position: absolute; */
+    /*top:50%;
     left:50%;
-    transform: translate(-50,-50%);  
+    transform: translate(-50%,-50%);   */
 }
 /* .check-star,.check-mark-hover{
     /* position: absolute; 
@@ -600,15 +601,20 @@ body{
 
 .block-2:hover .check-star{
     display: none;
+    transition: all 0.5s ease-in-out;
 }
 .block-2:hover .check-mark-hover{
     opacity: 1;
+    transition: all 0.2s ease-in-out;
     
 }
 .loader-img{
     height: 60px;
     width: 60px;
-    position: relative;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .loader{
     height:27px;
@@ -632,10 +638,10 @@ body{
 }
     @keyframes spin {
     0% {
-    transform: rotate(0deg); /* Start rotation at 0 degrees */
+    transform: rotate(0deg);
     }
     100% {
-    transform: rotate(360deg); /* End rotation at 360 degrees (a full turn) */
+    transform: rotate(360deg);
 }
     
 }
@@ -645,7 +651,97 @@ body{
     object-fit: cover;
     display: block;
     overflow: hidden;
+    position: absolute;
+    animation: spin 3s linear infinite;
+    animation-play-state: paused;
 }
+
+    @keyframes spin {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+}
+}
+.block-2-anm-2{
+    position: relative;
+    height: 60px;
+    width: 60px;
+}
+.check-mark-div{
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3 ease;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-2:hover .loader-bg{
+    animation-play-state: running;
+}
+.block-2:hover .loader-img{
+    opacity: 0;
+    transform: scale(0.8); 
+    display: visible;
+    animation: popDisappear 12s backwards;
+}
+@keyframes popDisappear {
+
+    0% {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+    10% {
+    opacity: 0;
+    transform: scale(1);
+}
+90% {
+    opacity: 0;
+    transform: scale(1);
+}
+
+100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1);
+}
+
+
+}
+.block-2:hover .check-mark-div{
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    visibility: visible;
+    transform: scale(1);
+    animation: popAppear 5s backwards;
+}
+
+@keyframes popAppear {
+
+    0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1);
+}
+    10% {
+    opacity: 0;
+    transform: scale(1);
+}
+90% {
+    opacity: 1;
+    transform: scale(1);
+}
+
+100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+}
+
 .block-3{
     border: solid #08090a12;
     border-radius: 15px;
