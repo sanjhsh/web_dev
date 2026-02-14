@@ -11,6 +11,7 @@
 }
 body{
     font-family: 'myfont';
+    overflow-x: hidden;
 }
 .logo {
     width: 104px;
@@ -306,6 +307,8 @@ body{
     margin-right: 0px;
     padding-right: 18px;
     padding-left: 18px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .table{
@@ -411,7 +414,7 @@ body{
     /* display:flex; */
     position: absolute;
     top:200%;
-    left:490px;
+    left:450px;
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(2,1fr);
@@ -605,7 +608,7 @@ body{
 }
 .block-2:hover .check-mark-hover{
     opacity: 1;
-    transition: all 0.2s ease-in-out;
+    transition: all 1s ease-in-out;
     
 }
 .loader-img{
@@ -797,4 +800,30 @@ body{
     align-items: center;
     text-align: center;
     margin-left: 240px;
+}
+.part-2{
+    background-color: #08090a08;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top:255%;
+    
+}
+.part-2-p-1{
+    color: #0c8c5e;
+    font-size: 18px;
+    width: 640px;
+    height: 18px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.part-2-heading{
+    font-size:40px;
+    margin-left: 220px;
+    text-wrap: balance;
+    width:10px;
+    height: 200px;
 }
